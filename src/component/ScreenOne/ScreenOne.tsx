@@ -21,7 +21,7 @@ function ScreenOne() {
         <Button label="Calender Invite" />
       </div>
       <div className="screen-one__right">
-        <img src={illustrationFirst} alt="illustration-image" />
+        <img src={illustrationFirst} alt="Illustration" />
       </div>
     </div>
   )

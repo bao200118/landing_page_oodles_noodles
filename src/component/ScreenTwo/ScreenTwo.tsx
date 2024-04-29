@@ -1,4 +1,4 @@
-import './ScreenTwo.css'
+import './ScreenTwo.scss'
 
 function ScreenTwo() {
   return (

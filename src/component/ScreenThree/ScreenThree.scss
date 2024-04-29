@@ -1,0 +1,27 @@
+.screen-three {
+    height: inherit;
+    display: flex;
+
+    &__left, &__right {
+        flex: 1;
+    }
+
+    &__left {
+        img {
+            height: 100%;
+        }
+    }
+
+    &__right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .time_and_location_text {
+            font-family: "Antonio", sans-serif;
+            font-size: 5.5rem;
+            padding-bottom: 4rem;
+        }
+    }
+}
