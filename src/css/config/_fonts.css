@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Open Sauce";
+    font-weight: bold;
+    src: url("../../assets/fonts/open-sauce-sans/OpenSauceSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Antonio";
+    font-weight: bold;
+    src: url("../../assets/fonts/antonio/Antonio-Bold.ttf");
+}

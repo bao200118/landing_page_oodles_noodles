@@ -1,0 +1,87 @@
+.screen-two {
+    display: flex;
+    font-size: 1.5rem;
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    --rhombus-edge: 1.5rem;
+    margin-top: 5rem;
+}
+
+.rhombus {
+    width: 0;
+    height: 0;
+    border-right: var(--rhombus-edge) solid transparent;
+    border-left: var(--rhombus-edge) solid transparent;
+    border-bottom: var(--rhombus-edge) solid white;
+    position: relative;
+}
+
+.rhombus:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: var(--rhombus-edge) solid transparent;
+    border-left: var(--rhombus-edge) solid transparent;
+    border-bottom: var(--rhombus-edge) solid white;
+    position: absolute;
+    left: calc(var(--rhombus-edge) * -1);
+    top: var(--rhombus-edge);
+    transform: rotate(180deg);
+}
+
+.square {
+    width: var(--rhombus-edge);
+    height: var(--rhombus-edge);
+    transform: translate(-50%, 50%);
+    background-color: #191919;
+}
+
+.circle {
+    border-radius: 50%;
+    background-color: white;
+    width: calc(var(--rhombus-edge) - 6px);
+    height: calc(var(--rhombus-edge) - 6px);
+    transform: translate(3px, 3px);
+}
+
+.logo-text {
+    padding-left: 0.5rem;
+    font-family: "Open Sauce", sans-serif;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 7rem;
+    font-family: "Antonio", serif;
+    text-transform: uppercase;
+    margin: 4.5rem 0;
+}
+
+.screen-one__left, .screen-one__right {
+    flex: 1
+}
+
+.screen-one__left {
+    margin-left: 5rem;
+}
+
+.screen-one__right {
+    padding: 3.5rem;
+    background-color: #c6a7ed;
+}
+
+.illustration {
+    width: 100%;
+    height: 100%;
+}
+
+.illustration img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

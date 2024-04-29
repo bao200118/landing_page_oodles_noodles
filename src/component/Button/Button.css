@@ -1,0 +1,19 @@
+.button-container {
+    background-color: #c6a7ed;
+    text-align: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.button-text {
+    /* Antonio font have 3px top space so need to adjust it */
+    padding: calc(0.35rem - 3px) 2.5rem 0.35rem;
+    /*padding: 0.35rem 0;*/
+    font-family: "Antonio", serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: white;
+    white-space: normal;
+    letter-spacing: 1px;
+}

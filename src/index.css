@@ -1,0 +1,10 @@
+@import "css/config/_common.css";
+@import "css/config/_fonts.css";
+
+body {
+    font-size: 16px;
+    background-color: #191919;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
