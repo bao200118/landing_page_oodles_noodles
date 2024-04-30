@@ -1,0 +1,32 @@
+.menu-box {
+    border: solid 1px #c6a7ed;
+    position: relative;
+
+    .content-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        height: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .title {
+            font-family: "Antonio", sans-serif;
+            font-weight: bold;
+            font-size: 5rem;
+        }
+
+        .content {
+            font-family: "telagraf", sans-serif;
+            font-size: 2.5rem;
+        }
+
+        .menu-button {
+            margin: 0 auto;
+        }
+    }
+}

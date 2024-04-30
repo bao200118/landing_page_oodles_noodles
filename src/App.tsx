@@ -2,6 +2,7 @@ import './App.css'
 import ScreenOne from './component/ScreenOne/ScreenOne.tsx'
 import ScreenTwo from './component/ScreenTwo/ScreenTwo.tsx'
 import ScreenThree from './component/ScreenThree/ScreenThree.tsx'
+import ScreenFour from './component/ScreenFour/ScreenFour.tsx'
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       </div>
       <div className="screen">
         <ScreenThree />
+      </div>
+      <div className="screen">
+        <ScreenFour />
       </div>
     </>
   )
