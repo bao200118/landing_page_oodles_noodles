@@ -3,6 +3,8 @@ import ScreenOne from './component/ScreenOne/ScreenOne.tsx'
 import ScreenTwo from './component/ScreenTwo/ScreenTwo.tsx'
 import ScreenThree from './component/ScreenThree/ScreenThree.tsx'
 import ScreenFour from './component/ScreenFour/ScreenFour.tsx'
+import ScreenFive from './component/ScreenFive/ScreenFive.tsx'
+import ScreenSix from './component/ScreenSix/ScreenSix.tsx'
 
 function App() {
   return (
@@ -18,6 +20,12 @@ function App() {
       </div>
       <div className="screen">
         <ScreenFour />
+      </div>
+      <div className="screen">
+        <ScreenFive />
+      </div>
+      <div className="screen">
+        <ScreenSix />
       </div>
     </>
   )

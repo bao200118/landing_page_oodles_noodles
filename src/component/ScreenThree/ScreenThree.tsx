@@ -9,7 +9,7 @@ function ScreenThree() {
         <img src={illustrationThird} alt="Illustration" />
       </div>
       <div className="screen-three__right">
-        <div className="time_and_location_text">
+        <div className="title">
           15 - 17 Aug 2025<br />
           6 PM Onwards<br />
           Buckville Park<br />

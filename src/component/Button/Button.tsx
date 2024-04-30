@@ -9,11 +9,15 @@ type ButtonProps = {
    * Click button handler
    */
   onClick?: () => void;
+  /**
+   * Added class name of button container
+   */
+  buttonContainerClass?: string
 }
 
-function Button({ label, onClick }: ButtonProps) {
+function Button({ label, onClick, buttonContainerClass }: ButtonProps) {
   return (
-    <div className="button-container" onClick={onClick}>
+    <div className={"button-container " + buttonContainerClass } onClick={onClick}>
       <div className="button-text">{label}</div>
     </div>
   )

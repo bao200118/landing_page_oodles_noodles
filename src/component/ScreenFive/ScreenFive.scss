@@ -1,0 +1,35 @@
+.screen-five {
+    display: grid;
+    grid-template-areas:
+            'title content'
+            'title content'
+            'illustration illustration';
+
+    .title {
+        grid-area: title;
+        margin: auto;
+        width: 50%;
+        font-size: 5rem;
+    }
+
+    .content {
+        grid-area: content;
+        margin: auto;
+        font-size: 1.25rem;
+        font-family: "telagraf", sans-serif;
+
+        .content-button {
+            margin-top: 3rem;
+        }
+    }
+
+    .illustration {
+        grid-area: illustration;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,15 +1,20 @@
 import './MenuBox.scss'
 import Button from '../Button/Button.tsx'
+import { ReactNode } from 'react'
 
 type MenuBoxProps = {
   /**
+   * Menu tag
+   */
+  tag?: string | ReactNode
+  /**
    * Menu title
    */
-  title: string,
+  title: string | ReactNode;
   /**
    * Menu content
    */
-  content: string;
+  content: string | ReactNode;
   /**
    * Menu button label
    */
@@ -20,19 +25,20 @@ type MenuBoxProps = {
   onClickButton?: () => void;
 }
 
-function MenuBox({ title, content, buttonLabel, onClickButton }: MenuBoxProps) {
+function MenuBox({ tag, title, content, buttonLabel, onClickButton }: MenuBoxProps) {
   return (
     <div className="menu-box">
       <div className="content-container">
+        <div className="tag">
+          {tag}
+        </div>
         <div className="title">
           {title}
         </div>
         <div className="content">
           {content}
         </div>
-        <div className="menu-button">
-          <Button label={buttonLabel} onClick={onClickButton} />
-        </div>
+        <Button buttonContainerClass="menu-button" label={buttonLabel} onClick={onClickButton} />
       </div>
     </div>
   )
