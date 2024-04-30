@@ -1,0 +1,40 @@
+.screen-seven {
+    background-color: #c6a7ed;
+    height: inherit;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+            'illustration illustration illustration'
+            'illustration illustration illustration'
+            'question . contract';
+
+    .question {
+        font-family: "Antonio", sans-serif;
+        text-transform: uppercase;
+        grid-area: question;
+        margin: auto;
+        font-size: 5rem;
+    }
+
+    .contract {
+        grid-area: contract;
+        margin: auto;
+        font-size: 1.75rem;
+        font-family: "telagraf", sans-serif;
+
+        .content-button {
+            margin-top: 3rem;
+        }
+    }
+
+    .illustration {
+        grid-area: illustration;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
