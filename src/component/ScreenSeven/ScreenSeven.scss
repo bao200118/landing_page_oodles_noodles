@@ -1,3 +1,5 @@
+@import "src/css/config/_breakpoint.scss";
+
 .screen-seven {
     background-color: #c6a7ed;
     height: inherit;
@@ -11,6 +13,7 @@
 
     .question {
         font-family: "Antonio", sans-serif;
+        font-weight: bold;
         text-transform: uppercase;
         grid-area: question;
         margin: auto;
@@ -21,7 +24,7 @@
         grid-area: contract;
         margin: auto;
         font-size: 1.75rem;
-        font-family: "telagraf", sans-serif;
+        font-family: "Telegraf", sans-serif;
 
         .content-button {
             margin-top: 3rem;
@@ -36,5 +39,40 @@
             height: 100%;
             object-fit: cover;
         }
+    }
+}
+
+@include breakpoint(small) {
+    .screen-seven {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+            'illustration'
+            'illustration'
+            'question'
+            'contract';
+
+        .question {
+            margin-left: 5rem;
+            margin-top: 3rem;
+            font-size: 6rem;
+        }
+
+        .contract {
+            margin-left: 5rem;
+            margin-top: 3rem;
+            font-size: 2rem;
+        }
+    }
+}
+
+@include breakpoint(medium) {
+    .screen-seven {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            'illustration illustration'
+            'illustration illustration'
+            'question contract';
     }
 }

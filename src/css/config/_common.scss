@@ -1,0 +1,33 @@
+.purple {
+    color: #c6a7ed;
+}
+
+.title {
+    font-family: "Antonio", fantasy;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+img {
+    &.show {
+        animation-name: image-load;
+        animation-duration: 0.5s;
+        animation-timing-function: ease-out;
+    }
+}
+
+.animation-bottom-up-text {
+    &.show {
+        animation-name: load-bottom-up-text;
+        animation-duration: 0.5s;
+        animation-timing-function: cubic-bezier(.1, .15, .5, 1.2);
+    }
+}
+
+.animation-bottom-up-button {
+    &.show {
+        animation-name: load-bottom-up-button;
+        animation-duration: 0.5s;
+        animation-timing-function: cubic-bezier(.1, .15, .5, 1.2);
+    }
+}

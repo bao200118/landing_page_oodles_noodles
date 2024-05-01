@@ -1,6 +1,14 @@
+@import "src/css/config/_breakpoint.scss";
+
 .screen-two {
     text-align: center;
     position: relative;
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+
+    @include breakpoint(small) {
+        height: 60dvmax;
+    }
 
     .text-container {
         width: 100%;
@@ -16,8 +24,34 @@
         }
 
         .invitation {
-            font-family: "telegraf", sans-serif;
+            font-family: "Telegraf", sans-serif;
             font-size: 1.5rem;
+        }
+
+        @include breakpoint(small) {
+            .title {
+                font-size: 3.5rem;
+            }
+
+            .invitation {
+                font-size: 2rem;
+            }
+        }
+
+        @include breakpoint(medium) {
+            .invitation {
+                font-size: 2rem;
+            }
+        }
+
+        @include breakpoint(large) {
+            .title {
+                font-size: 5.5rem;
+            }
+
+            .invitation {
+                font-size: 2rem;
+            }
         }
     }
 }

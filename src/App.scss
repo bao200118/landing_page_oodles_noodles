@@ -1,0 +1,11 @@
+@import "src/css/config/_breakpoint.scss";
+
+.screen {
+  display: grid;
+  height: 100dvh;
+
+  @include breakpoint(small) {
+    height: fit-content;
+  }
+}
+

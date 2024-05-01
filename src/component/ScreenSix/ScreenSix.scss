@@ -1,6 +1,27 @@
+@import "src/css/config/_breakpoint.scss";
+
 .screen-six {
-    padding: 4.8rem;
+    padding: 8rem 20rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 4.8rem;
+    grid-gap: 8rem;
+    box-sizing: border-box;
+
+    @include breakpoint(small) {
+        padding: 12rem 6rem;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    @include breakpoint(medium) {
+        padding: 18rem 6rem;
+    }
+
+    @include breakpoint(large) {
+        padding: 20rem 12rem;
+    }
+
+    @include breakpoint(extra-large) {
+        padding: 8rem;
+    }
 }

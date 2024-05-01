@@ -1,0 +1,40 @@
+@import "css/config/_common.scss";
+@import "css/config/_fonts.scss";
+@import "css/config/_animation.scss";
+@import "css/config/_breakpoint.scss";
+
+html {
+    @include breakpoint(extra-small) {
+        font-size: 6px !important;
+        width: 100vw;
+    }
+
+    @include breakpoint(small) {
+        font-size: 8px;
+        width: 100vw;
+    }
+
+    @include breakpoint(medium) {
+        font-size: 8px;
+        width: 100vw;
+    }
+
+    @include breakpoint(large) {
+        font-size: 8px;
+    }
+
+    @include breakpoint(extra-large) {
+        font-size: 12px;
+    }
+
+    @include breakpoint(ultra-large) {
+        font-size: 14px;
+    }
+}
+
+body {
+    background-color: #191919;
+    color: white;
+    margin: 0;
+    padding: 0;
+}

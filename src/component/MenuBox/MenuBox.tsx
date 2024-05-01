@@ -29,16 +29,20 @@ function MenuBox({ tag, title, content, buttonLabel, onClickButton }: MenuBoxPro
   return (
     <div className="menu-box">
       <div className="content-container">
-        <div className="tag">
-          {tag}
-        </div>
+        {
+          tag && (
+            <div className="tag">
+              {tag}
+            </div>)
+        }
         <div className="title">
           {title}
         </div>
         <div className="content">
           {content}
         </div>
-        <Button buttonContainerClass="menu-button" label={buttonLabel} onClick={onClickButton} />
+        <Button buttonContainerClass="menu-button animation-bottom-up-button hidden" label={buttonLabel}
+                onClick={onClickButton} />
       </div>
     </div>
   )

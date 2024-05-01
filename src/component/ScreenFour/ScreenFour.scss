@@ -1,6 +1,31 @@
+@import "src/css/config/_breakpoint.scss";
+
 .screen-four {
-    padding: 6.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
     grid-gap: 2.5rem;
+    box-sizing: border-box;
+    padding: 6.5rem;
+
+    @include breakpoint(small) {
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 100%;
+        grid-row-gap: 5rem;
+        padding: 6rem 6rem;
+        height: fit-content;
+    }
+
+    @include breakpoint(medium) {
+        padding: 18rem 6rem;
+    }
+
+    @include breakpoint(large) {
+        padding: 20rem 10rem;
+    }
+
+    @include breakpoint(extra-large) {
+        padding: 8rem 4rem;
+    }
+
 }

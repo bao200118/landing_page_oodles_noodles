@@ -3,18 +3,18 @@ import illustration from '../../assets/images/seventh_screen_image.png'
 
 function ScreenSeven() {
   return (
-    <div className="screen-seven">
+    <>
       <div className="illustration">
-        <img src={illustration} alt="Illustration" />
+        <img className="hidden" src={illustration} alt="Illustration" />
       </div>
-      <div className="question">
+      <div className="question animation-bottom-up-text hidden">
         Questions?
       </div>
-      <div className="contract">
+      <div className="contract animation-bottom-up-text hidden">
         Reach out to:<br />
         <b>@BaoPG</b>
       </div>
-    </div>
+    </>
   )
 }
 

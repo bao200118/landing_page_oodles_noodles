@@ -15,7 +15,7 @@ type ButtonProps = {
   buttonContainerClass?: string
 }
 
-function Button({ label, onClick, buttonContainerClass }: ButtonProps) {
+function Button({ label, onClick, buttonContainerClass = "" }: ButtonProps) {
   return (
     <div className={"button-container " + buttonContainerClass } onClick={onClick}>
       <div className="button-text">{label}</div>

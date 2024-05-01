@@ -1,0 +1,42 @@
+@mixin breakpoint($size) {
+    @if $size == extra-small {
+        /* Extra small devices (phones, 320px and down) */
+        @media only screen and (max-width: 320px) {
+            @content;
+        }
+    }
+    @else if $size == small {
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (max-width: 767px) and (orientation: portrait) {
+            @content;
+        }
+
+        @media only screen and (max-height: 767px) and (orientation: landscape) {
+            @content;
+        }
+    }
+    @else if $size == medium {
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) and (max-width: 992px)   {
+            @content;
+        }
+    }
+    @else if $size == large {
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @else if $size == extra-large {
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) and (max-width: 1499px) {
+            @content;
+        }
+    }
+    @else if $size == ultra-large {
+        /* ultra large devices (ultra large laptops and desktops, 1500px and up) */
+        @media only screen and (min-width: 1500px) {
+            @content;
+        }
+    }
+}
