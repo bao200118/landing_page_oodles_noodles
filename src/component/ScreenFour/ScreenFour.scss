@@ -1,31 +1,15 @@
 @import "src/css/config/_breakpoint.scss";
 
-.screen-four {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100%;
-    grid-gap: 2.5rem;
+.menu-box-content {
+    display: flex;
+    gap: 2.5rem;
+    min-height: 80%;
+    margin: auto;
+    justify-content: space-evenly;
     box-sizing: border-box;
-    padding: 6.5rem;
-
-    @include breakpoint(small) {
-        grid-template-rows: 1fr 1fr 1fr;
-        grid-template-columns: 100%;
-        grid-row-gap: 5rem;
-        padding: 6rem 6rem;
-        height: fit-content;
+    padding: 0 max(20px, 10vw);
+    > :nth-child(n) {
+        flex: 1 1 200px;
     }
-
-    @include breakpoint(medium) {
-        padding: 18rem 6rem;
-    }
-
-    @include breakpoint(large) {
-        padding: 20rem 10rem;
-    }
-
-    @include breakpoint(extra-large) {
-        padding: 8rem 4rem;
-    }
-
+    flex-wrap: wrap;
 }

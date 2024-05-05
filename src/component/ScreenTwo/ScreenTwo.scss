@@ -2,9 +2,6 @@
 
 .screen-two {
     text-align: center;
-    position: relative;
-    grid-template-rows: 100%;
-    grid-template-columns: 100%;
 
     @include breakpoint(small) {
         height: 60dvmax;
@@ -12,11 +9,7 @@
 
     .text-container {
         width: 100%;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        margin: auto;
 
         .title {
             font-size: 5rem;

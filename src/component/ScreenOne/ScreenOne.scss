@@ -1,14 +1,16 @@
 @import "src/css/config/_breakpoint.scss";
 
 .screen-one {
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100%;
-  font-size: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(496px, 80vw), 1fr));
+
+  &__left {
+    font-size: clamp(0.85rem, -0.2500rem + 1.7187vw, 2.5rem);
+  }
 
   .logo-container {
     display: flex;
-    --rhombus-edge: 1.5rem;
-    margin-top: 5rem;
+    --rhombus-edge: 1em;
+    margin-top: 3em;
   }
 
   .rhombus {
@@ -49,22 +51,22 @@
   }
 
   .logo-text {
-    padding-left: 0.5rem;
+    padding-left: 0.5em;
     font-family: "Open Sauce", sans-serif;
     font-weight: bold;
   }
 
   .title {
-    font-size: 7rem;
-    margin: 4.5rem 0;
+    font-size: max(4.25em, 8vw);
+    margin: 1em 0;
   }
 
   &__left {
-    margin-left: 5rem;
+    margin-left: 10%;
   }
 
   &__right {
-    padding: 3.5rem;
+    padding: 3.5em;
     background-color: #c6a7ed;
 
     img {
@@ -75,26 +77,10 @@
   }
 }
 
-@include breakpoint(small) {
-  .screen-one {
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr auto;
-    height: fit-content;
-
-    &__right {
-      margin: 5rem;
-    }
-  }
-}
-
 @include breakpoint(medium) {
   .screen-one {
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr auto;
-    height: fit-content;
-
     &__right {
-      margin: 5rem;
+      margin: 20% 10%;
     }
   }
 }

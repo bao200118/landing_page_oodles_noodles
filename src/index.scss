@@ -4,31 +4,8 @@
 @import "css/config/_breakpoint.scss";
 
 html {
-    @include breakpoint(extra-small) {
-        font-size: 6px !important;
-        width: 100vw;
-    }
-
-    @include breakpoint(small) {
-        font-size: 8px;
-        width: 100vw;
-    }
-
     @include breakpoint(medium) {
-        font-size: 8px;
-        width: 100vw;
-    }
-
-    @include breakpoint(large) {
-        font-size: 8px;
-    }
-
-    @include breakpoint(extra-large) {
-        font-size: 12px;
-    }
-
-    @include breakpoint(ultra-large) {
-        font-size: 14px;
+        max-width: 100dvw;
     }
 }
 

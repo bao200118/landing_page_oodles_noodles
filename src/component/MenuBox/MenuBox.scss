@@ -4,10 +4,10 @@
     border: solid 1px #c6a7ed;
     display: grid;
     grid-template-columns: 0.2fr 1fr 0.2fr;
-    grid-template-rows: 100%;
     grid-template-areas: '. content .';
     align-items: center;
-
+    min-height: max(40dvh,450px);
+    font-size: clamp(1.5rem, 1.5vw, 2.5rem);
 
     .content-container {
         grid-area: content;
@@ -22,19 +22,19 @@
 
         .title {
             white-space: pre-wrap;
-            font-size: 5rem;
+            font-size: 2.5em;
         }
 
         .content {
             white-space: pre-wrap;
             font-family: "Telegraf", sans-serif;
             font-weight: normal;
-            font-size: 2.5rem;
+            font-size: 1em;
         }
 
         .menu-button {
             margin: 0 auto;
-            width: 80%;
+            width: 90%;
         }
 
         .tag {
@@ -48,7 +48,6 @@
 
 @include breakpoint(small) {
     .menu-box {
-        height: 60dvmax;
         align-items: center;
         justify-content: center;
 
