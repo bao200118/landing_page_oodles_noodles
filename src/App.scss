@@ -2,10 +2,10 @@
 
 .screen {
   display: grid;
-  min-height: 100dvh;
+  height: 100dvh;
 
-  @include breakpoint("medium") {
-    min-height: auto;
+  @include breakpoint(small) {
     height: fit-content;
   }
 }
+
